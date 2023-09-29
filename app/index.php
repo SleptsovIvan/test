@@ -17,6 +17,10 @@ Router::get('/home', function() {
     }
 });
 
+Router::get('/hello', function() {
+    echo 'Hello';
+});
+
 Router::error(function() {
     http_response_code(404);
     echo '404 NOT FOUND :(';
